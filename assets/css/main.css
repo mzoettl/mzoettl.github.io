@@ -249,7 +249,7 @@ input, select, textarea {
 
 
 .heropage{
-	 background-image: url(../../images/dambergbene.jpg);
+	 background-image: url(../../images/dambergbene-thumb.jpg);
 	 -webkit-filter:grayscale(100%);
 	 -moz-filter: grayscale(100%);
 	 filter: gray;

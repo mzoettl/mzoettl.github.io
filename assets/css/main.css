@@ -314,6 +314,7 @@ input, select, textarea {
 	margin: 0 auto;
 	line-height: 1.2;
 	
+	
 }
 
 .section-devider{
@@ -366,12 +367,28 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.sub-quote{
+				margin-bottom: -4em;
+				width: 70%;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
 
 			.container {
 				width: 100%;
+			}
+
+		}
+		@media screen and (max-width: 320px) {
+
+			.container {
+				width: 100%;
+			}
+
+			.section-devider{
+				height: 25px;
 			}
 
 		}
@@ -392,7 +409,17 @@ input, select, textarea {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
+			opacity: 0;
+			transform: translateY(30%);
+			transition: 500ms all;
 		}
+		.fadeIn{
+			
+			opacity: 1.0;
+			transform: translateY(0%);
+			transition: all 500ms;
+		}
+
 
 		.gallery-item1 {
 			
@@ -497,8 +524,7 @@ input, select, textarea {
 			grid-row-end: 43;
 		}
 		
-
-
+		
 		.gallery-item  {
 			overflow: hidden;
 			

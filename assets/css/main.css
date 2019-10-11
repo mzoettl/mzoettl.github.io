@@ -410,13 +410,13 @@ input, select, textarea {
 			width: 100%;
 			object-fit: cover;
 			opacity: 0;
-			transform: translateY(30%);
+			
 			transition: 1000ms all;
 		}
 		.fadeIn{
 			
 			opacity: 1.0;
-			transform: translateY(0%);
+			
 			transition: all 1000ms;
 		}
 

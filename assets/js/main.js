@@ -6,7 +6,7 @@
 		$body = $('body'),
 		$nav = $('#nav');
 
-		const targets = document.querySelectorAll('img');
+		 const targets = document.querySelectorAll('img');
 
 		const lazyLoad = target => {
 		  const io = new IntersectionObserver((entries, observer) => {
@@ -31,7 +31,8 @@
 		
 		targets.forEach(lazyLoad);	
 		
-		$(".loader-wrapper").delay(750).fadeOut("slow");
+		$(".loader-wrapper").delay(750).fadeOut("slow"); 
+
 	// Breakpoints.
 		breakpoints({
 			wide:      [ '961px',  '1880px' ],

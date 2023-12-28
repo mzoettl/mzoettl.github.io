@@ -269,6 +269,11 @@ input, select, textarea {
 	 flex-wrap: wrap;
 	 border-radius: 1em 1em 1em 1em;
 }
+@media screen and (max-width: 600px) {
+    .heropage {
+        background-image: url(../../images/sunset_thumb_mobile.jpg);
+    }
+}
 
 .heropage > *{
 	position: relative;
@@ -353,26 +358,13 @@ input, select, textarea {
 
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
 
-			.container {
-
-				
-			}
-
 		}
 
 		@media screen and (min-width: 961px) and (max-width: 1320px) {
 
-			.container {
-				
-			}
-
 		}
 
 		@media screen and (max-width: 960px) {
-
-			.container {
-				
-			}
 
 			.sub-quote{
 				margin-bottom: -4em;
@@ -382,17 +374,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
-			.container {
-				
-			}
-
 		}
 		@media screen and (max-width: 320px) {
-
-			.container {
-				
-			}
 
 			.section-devider{
 				height: 25px;
@@ -402,8 +385,6 @@ input, select, textarea {
 
 
 		.container-gallery{
-
-			
 			display: grid;
 			grid-template-columns: repeat(16, 1fr);
    			grid-template-rows: repeat(43, 5vw);
@@ -411,10 +392,31 @@ input, select, textarea {
 		
 			
 		}
+
+		@media screen and (min-width: 601px) {
+			.gallery-link-desktop{
+			  display: none;
+			}
+		  }
+
+		  @media screen and (max-width: 600px) {
+			.gallery-link-mobile{
+			  display: none;
+			}
+		  }
+		  
+
 		.gallery-item{
 			overflow: hidden;
 			border-radius: 0.8em;
 			position: relative; 
+		}
+		.gallery-picture{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			opacity: 1;
+			transition: transform 3s ease, filter 2s ease, opacity 2s ease;
 		}
 
 		.gallery__img {
@@ -424,6 +426,7 @@ input, select, textarea {
 			opacity: 0;
 			transition: transform 3s ease, filter 2s ease, opacity 2s ease;
 		}
+		
 		
 	
 		@media (hover: hover) and (min-width: 1024px) { 
@@ -1095,11 +1098,6 @@ input, select, textarea {
 				font-size: 16pt;
 			}
 
-			.container {
-				
-		
-			}
-
 		/* Icons */
 
 			ul.icons li a {
@@ -1170,10 +1168,6 @@ input, select, textarea {
 
 			header br {
 				display: none;
-			}
-
-			.container {
-				
 			}
 
 		/* Item */
@@ -1357,10 +1351,6 @@ input, select, textarea {
 				position: relative;
 			}
 
-
-			.container {
-				
-			}
 
 		/* List */
 
